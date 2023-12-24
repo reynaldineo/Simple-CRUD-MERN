@@ -1,8 +1,17 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProductList from "./component/ProductList";
+import AddProduct from "./component/AddProduct";
+import EditProduct from "./component/EditProduct";
+
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ProductList />} />
+        <Route path="add" element={<AddProduct />} />
+        <Route path="edit/:id" element={<EditProduct />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

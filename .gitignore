@@ -5,6 +5,9 @@
 /backend/node_modules
 /frontend/node_modules
 
+# public
+/backend/public/
+
 # production
 /build
 
